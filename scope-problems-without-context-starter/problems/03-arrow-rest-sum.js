@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a function named `arrowRestSum` that accepts all incoming parameters
+Write a function named `arrowRestSum` that accepts all incoming parameters //accepting unspecicfied # use rest
 and sums them. Assign the below function to a variable using the const keyword.
 
 **Hint**: Use rest parameter syntax!
@@ -13,6 +13,16 @@ arrowRestSum(0); // => 0
 // your code here!
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+const arrowRestSum = (...nums) => {
+  let sum = 0
+  for(let i = 0; i < nums.length; i++) {
+    let el = nums[i]
+    sum += el
+  }
+  return sum
+}
+
 
 try {
   module.exports = arrowRestSum;

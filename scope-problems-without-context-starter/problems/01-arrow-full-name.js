@@ -17,6 +17,14 @@ arrowGetFullName(p2); // => 'Charlie Brown'
 // your code here!
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+//arrowGetFullName(p1); // => 'John Doe'
+
+
+let arrowGetFullName = person => person.firstName + " " + person.lastName //
+
+
+
+
 
 try {
   module.exports = arrowGetFullName;
